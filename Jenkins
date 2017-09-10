@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('build'){
 	agent {
-        label 'Linux && CentOS'
+        label 'CentOS'
       }
       steps {
       sh 'ant -f build.xml -v'
