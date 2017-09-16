@@ -42,9 +42,9 @@ pipeline {
      }
     }
     stage("Test on Debian"){
-    
+
      agent {
-      docker 'openjdk:8u141-jre'
+      docker 'openjdk:7u151-jre'
      }
       steps {
         sh "wget http://yarlpava1.mylabserver.com/rectangles/all/rectangle_${env.BUILD_NUMBER}.jar 3 4"
