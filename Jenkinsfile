@@ -10,8 +10,6 @@ pipeline {
       steps {
         sayHello 'Awesome Student'
       }
-      }
-    }
     }
 
     stage('Unit Tests') {
